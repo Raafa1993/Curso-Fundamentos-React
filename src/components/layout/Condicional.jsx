@@ -4,7 +4,7 @@ import If from './if'
 export default props => {
   return (
     <div>
-      <h2>O numeo é {props.numero}</h2>
+      <h2>O numero é {props.numero}</h2>
       <If test={props.numero % 2 === 0}>
         <span>Par</span>
       </If>
