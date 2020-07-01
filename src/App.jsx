@@ -6,9 +6,13 @@ import Primeiro from './components/layout/Primeiro'
 import ComParametro from './components/layout/ComParametro'
 import ComFilhos from './components/layout/ComFilhos'
 import Cards from './components/layout/Cards'
+import Repeticao from './components/layout/Repeticao'
 
 export default (props) => (
   <div className="App">
+    <Cards titulo="#04 - Repeticao">
+      <Repeticao></Repeticao>
+    </Cards>
     <Cards titulo="#03 - Componente com Filhos">
       <ComFilhos>
         <ul>
