@@ -7,9 +7,13 @@ import ComParametro from './components/layout/ComParametro'
 import ComFilhos from './components/layout/ComFilhos'
 import Cards from './components/layout/Cards'
 import Repeticao from './components/layout/Repeticao'
+import Condicional from './components/layout/Condicional'
 
 export default (props) => (
   <div className="App">
+    <Cards titulo="#05 - Condicional v1">
+      <Condicional numero={5}></Condicional>
+    </Cards>
     <Cards titulo="#04 - Repeticao">
       <Repeticao></Repeticao>
     </Cards>

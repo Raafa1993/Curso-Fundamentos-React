@@ -11,8 +11,6 @@ export default props => {
       </li>
     })
   }
-
-
   return (
     <div>
       <h2>Repetição</h2>
