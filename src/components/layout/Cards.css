@@ -4,7 +4,7 @@
     border: 3px solid #000;
     border-radius: 10px;
     background-color: #fff;
-
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     min-width: 300px;
