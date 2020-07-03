@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 
 import './Contador.css'
 
-import Display from './display'
+import Display from './Display'
 import PassoForm from './PassoForm'
+import Botoes from './Botoes'
 
 export default class Contador extends Component {
 
@@ -35,16 +36,10 @@ export default class Contador extends Component {
     return (
       <div className="Contador">
         <h2>Contador</h2>
-
         <PassoForm passo={this.state.passo}
-          onChange={this.mudarPasso()}></PassoForm>
-
+          onPassoChange={this.mudarPasso}></PassoForm>
         <Display valor={this.state.valor}></Display>
-
-        <div>
-          <button onClick={this.inc}>+</button>
-          <button onClick={this.dec}>-</button>
-        </div>
+        <Botoes onInc={this.inc} onDec={this.dec}></Botoes>
       </div>
     )
   }
